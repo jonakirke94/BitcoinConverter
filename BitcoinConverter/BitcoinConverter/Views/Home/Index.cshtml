@@ -3,7 +3,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h1>BITCOIN CONVERTER</h1>
+<h1>Hvad koster det i bitcoin?</h1>
 
 <h2>Last updated: @Model.LastUpdated</h2>
 
@@ -15,11 +15,15 @@
         {
             <div class="col-md-4 product">
                 <div class="gallery">
-                    <img src="~/images/@item.ImgUrl" width="300" height="200" />
-                    
-                    <div class="desc">@item.Name</div>
-                    <div class="desc">@item.DKKPrice</div>
-                    <div class="desc">@item.BitcoinPrice</div>
+                    <img src="~/images/@item.ImgUrl" class="img-responsive img-thumbnail"/>
+                    <div id="description">
+                        <div id="name">@item.Name</div>
+                        <hr id="desc-divider"/>
+                        string moneyValue = String.Format("{0:C}", moneyvalue);
+                        <div class="price-dkk">@item.DKKPrice kr.</div>
+                        <hr id="desc-divider" />
+                        <div class="price-b">@item.BitcoinPrice </div>
+                    </div>
 
                 </div>
             </div>

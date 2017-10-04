@@ -41,7 +41,7 @@ namespace BitcoinConverter.Controllers
 
             foreach (Product item in newList)
             {
-                item.BitcoinPrice = client.GetPrice(defeaultCurrency, item.DKKPrice);
+                item.BitcoinPrice = client.GetPrice(defeaultCurrency, item.DKKPrice) + " " + "\u0243";
             }
 
             return newList;

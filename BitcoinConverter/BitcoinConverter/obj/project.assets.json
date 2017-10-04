@@ -12533,7 +12533,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jonathan\\.nuget\\packages\\": {},
+    "C:\\Users\\inter\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -12542,17 +12542,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jonathan\\Documents\\Github\\BitcoinConverter\\BitcoinConverter\\BitcoinConverter\\BitcoinConverter.csproj",
+      "projectUniqueName": "C:\\Users\\inter\\OneDrive\\Documents\\Git Projects\\bitcoinconverter\\BitcoinConverter\\BitcoinConverter\\BitcoinConverter.csproj",
       "projectName": "BitcoinConverter",
-      "projectPath": "C:\\Users\\Jonathan\\Documents\\Github\\BitcoinConverter\\BitcoinConverter\\BitcoinConverter\\BitcoinConverter.csproj",
-      "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jonathan\\Documents\\Github\\BitcoinConverter\\BitcoinConverter\\BitcoinConverter\\obj\\",
+      "projectPath": "C:\\Users\\inter\\OneDrive\\Documents\\Git Projects\\bitcoinconverter\\BitcoinConverter\\BitcoinConverter\\BitcoinConverter.csproj",
+      "packagesPath": "C:\\Users\\inter\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\inter\\OneDrive\\Documents\\Git Projects\\bitcoinconverter\\BitcoinConverter\\BitcoinConverter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\inter\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

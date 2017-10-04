@@ -9,3 +9,14 @@ C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConv
 C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.AssemblyInfo.cs
 C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.dll
 C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.pdb
+C:\Users\inter\OneDrive\Documents\Git Projects\bitcoinconverter\BitcoinConverter\BitcoinConverter\bin\Debug\netcoreapp2.0\BitcoinConverter.deps.json
+C:\Users\inter\OneDrive\Documents\Git Projects\bitcoinconverter\BitcoinConverter\BitcoinConverter\bin\Debug\netcoreapp2.0\BitcoinConverter.runtimeconfig.json
+C:\Users\inter\OneDrive\Documents\Git Projects\bitcoinconverter\BitcoinConverter\BitcoinConverter\bin\Debug\netcoreapp2.0\BitcoinConverter.runtimeconfig.dev.json
+C:\Users\inter\OneDrive\Documents\Git Projects\bitcoinconverter\BitcoinConverter\BitcoinConverter\bin\Debug\netcoreapp2.0\BitcoinConverter.dll
+C:\Users\inter\OneDrive\Documents\Git Projects\bitcoinconverter\BitcoinConverter\BitcoinConverter\bin\Debug\netcoreapp2.0\BitcoinConverter.pdb
+C:\Users\inter\OneDrive\Documents\Git Projects\bitcoinconverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.csprojResolveAssemblyReference.cache
+C:\Users\inter\OneDrive\Documents\Git Projects\bitcoinconverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.csproj.CoreCompileInputs.cache
+C:\Users\inter\OneDrive\Documents\Git Projects\bitcoinconverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.AssemblyInfoInputs.cache
+C:\Users\inter\OneDrive\Documents\Git Projects\bitcoinconverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.AssemblyInfo.cs
+C:\Users\inter\OneDrive\Documents\Git Projects\bitcoinconverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.dll
+C:\Users\inter\OneDrive\Documents\Git Projects\bitcoinconverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.pdb

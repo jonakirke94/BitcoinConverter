@@ -18,10 +18,10 @@ namespace BitcoinConverter.BitcoinAPI
             return "https://blockchain.info/tobtc?currency=" + currency + "&value=" + value;
         }
 
-        private static string MakeRequest(string link)
+        private static decimal MakeRequest(string link)
         {
             var client = new HttpClient();
-            string responseString = "Unknown";
+            decimal responseString = 0.0m;
 
             //accepting json
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -29,12 +29,13 @@ namespace BitcoinConverter.BitcoinAPI
             {
                 var result = client.GetAsync(link).Result;
                 var tmpresult = result.Content.ReadAsStringAsync().Result;
-                var checkRes = JsonConvert.DeserializeObject<string>(tmpresult);
+                var checkRes = JsonConvert.DeserializeObject<decimal>(tmpresult);
 
-                if (!string.IsNullOrEmpty(checkRes))
-                {
-                    responseString = checkRes;
-                }
+                //if (!string.IsNullOrEmpty(checkRes))
+                //{
+                //    responseString = checkRes;
+                //}
+                responseString = checkRes;
 
             }
             catch (Exception e)
@@ -49,28 +50,31 @@ namespace BitcoinConverter.BitcoinAPI
             string[] splitValue = value.ToString().Split(",");
 
             var leftUrl = BuildURL(currency, splitValue[0]);
-            string leftResult = MakeRequest(leftUrl);
-            decimal leftVal = System.Convert.ToDecimal(leftResult);
+            var leftResult = MakeRequest(leftUrl);
+            decimal leftVal = Convert.ToDecimal(leftResult);
 
             var rightVal = 0.0m;
 
             if (1 < splitValue.Length)
             {
                 var buildRightVal = "0." + splitValue[1];
-                rightVal = System.Convert.ToDecimal(buildRightVal) * OneOreToBC();
+                var unrounded = decimal.Parse(buildRightVal);
+                var rounded = Math.Round(unrounded, 6);
+                rightVal = rounded * OneMilliOreToBC();
             }
 
             decimal total = leftVal + rightVal;
+            decimal totalRounded = Math.Round(total, 5);
 
-            return total.ToString();
+            return totalRounded.ToString();
         }
 
-        private decimal OneOreToBC()
+        private decimal OneMilliOreToBC()
         {
             var url = BuildURL("DKK", "1");
-            string stringResult = MakeRequest(url);
-            Decimal result = Decimal.Parse(stringResult, CultureInfo.InvariantCulture);
-            return result;
+            var stringResult = MakeRequest(url);
+            //decimal result = decimal.Parse(stringResult);
+            return stringResult / 1000000;
         }
 
 
