@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -24,7 +25,6 @@ namespace BitcoinConverter.BitcoinAPI
 
             //accepting json
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
             try
             {
                 var result = client.GetAsync(link).Result;
@@ -44,15 +44,33 @@ namespace BitcoinConverter.BitcoinAPI
             return responseString;
         }
 
-        public double GetPrice(string currency, string value)
+        public string GetPrice(string currency, decimal value)
         {
-            var url = BuildURL(currency, value);
+            string[] splitValue = value.ToString().Split(",");
 
-            double unformattedBC = Double.Parse(MakeRequest(url), System.Globalization.CultureInfo.InvariantCulture);
+            var leftUrl = BuildURL(currency, splitValue[0]);
+            string leftResult = MakeRequest(leftUrl);
+            decimal leftVal = System.Convert.ToDecimal(leftResult);
 
-            var formattedBC = BitcoinHelper.FormatBitcoin(unformattedBC);
+            var rightVal = 0.0m;
 
-            return formattedBC;
+            if (1 < splitValue.Length)
+            {
+                var buildRightVal = "0." + splitValue[1];
+                rightVal = System.Convert.ToDecimal(buildRightVal) * OneOreToBC();
+            }
+
+            decimal total = leftVal + rightVal;
+
+            return total.ToString();
+        }
+
+        private decimal OneOreToBC()
+        {
+            var url = BuildURL("DKK", "1");
+            string stringResult = MakeRequest(url);
+            Decimal result = Decimal.Parse(stringResult, CultureInfo.InvariantCulture);
+            return result;
         }
 
 

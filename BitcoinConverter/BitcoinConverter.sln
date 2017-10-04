@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitcoinConverter", "BitcoinConverter\BitcoinConverter.csproj", "{A905F958-2A37-4442-AFF5-F3312D18A57A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitcoinTest", "BitcoinTest\BitcoinTest.csproj", "{B7ED5CF2-A40F-4223-BB30-9EAB4EC200DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A905F958-2A37-4442-AFF5-F3312D18A57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A905F958-2A37-4442-AFF5-F3312D18A57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A905F958-2A37-4442-AFF5-F3312D18A57A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7ED5CF2-A40F-4223-BB30-9EAB4EC200DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7ED5CF2-A40F-4223-BB30-9EAB4EC200DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7ED5CF2-A40F-4223-BB30-9EAB4EC200DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7ED5CF2-A40F-4223-BB30-9EAB4EC200DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
