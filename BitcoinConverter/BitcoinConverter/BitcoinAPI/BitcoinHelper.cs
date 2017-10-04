@@ -11,7 +11,7 @@ namespace BitcoinConverter.BitcoinAPI
         //BITCENT = 0.01 bitcoin
         //MILLIBIT = 0.001 bitcoin
         //MICROBIT = 0.000001 bitcoin
-        //SATOSHI = 0.00000001 bitcoin
+        //SATOSHI = 0.00000001 bitcoin.
 
         public static double FormatBitcoin(double value)
         {
