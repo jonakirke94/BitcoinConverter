@@ -1,0 +1,11 @@
+C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\bin\Debug\netcoreapp2.0\BitcoinConverter.deps.json
+C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\bin\Debug\netcoreapp2.0\BitcoinConverter.runtimeconfig.json
+C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\bin\Debug\netcoreapp2.0\BitcoinConverter.runtimeconfig.dev.json
+C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\bin\Debug\netcoreapp2.0\BitcoinConverter.dll
+C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\bin\Debug\netcoreapp2.0\BitcoinConverter.pdb
+C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.AssemblyInfoInputs.cache
+C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.AssemblyInfo.cs
+C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.dll
+C:\Users\Jonathan\Documents\Github\BitcoinConverter\BitcoinConverter\BitcoinConverter\obj\Debug\netcoreapp2.0\BitcoinConverter.pdb
