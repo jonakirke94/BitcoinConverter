@@ -45,7 +45,7 @@ namespace BitcoinConverter.BitcoinAPI
             return responseString;
         }
 
-        public string GetPrice(string currency, decimal value)
+        public decimal GetPrice(string currency, decimal value)
         {
             string[] splitValue = value.ToString().Split(",");
 
@@ -64,9 +64,9 @@ namespace BitcoinConverter.BitcoinAPI
             }
 
             decimal total = leftVal + rightVal;
-            decimal totalRounded = Math.Round(total, 5);
+            
 
-            return totalRounded.ToString();
+            return total;
         }
 
         private decimal OneMilliOreToBC()

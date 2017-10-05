@@ -18,7 +18,7 @@ namespace BitcoinConverter.Controllers
         {
             ProductViewModel model = new ProductViewModel
             {
-                LastUpdated = DateTime.Now,
+                LastUpdated = DateTime.Now.ToString("dd. MMM HH:mm"),
                 Products = UpdateBitcoinPrices(),              
             };
 
@@ -33,18 +33,38 @@ namespace BitcoinConverter.Controllers
 
         private List<Product> UpdateBitcoinPrices()
         {
+            var rnd = new Random();
             SeedData data = new SeedData();
-            List<Product> newList = new List<Product>(data.Products);
+            List<Product> newList = new List<Product>(data.Products.OrderBy(item => rnd.Next())); //shuffles the list
 
-            
+
 
 
             foreach (Product item in newList)
             {
-                item.BitcoinPrice = client.GetPrice(defeaultCurrency, item.DKKPrice) + " " + "\u0243";
+                decimal btcPrice = client.GetPrice(defeaultCurrency, item.DKKPrice);
+                decimal btcRounded = Math.Round(btcPrice, 5);
+                item.BitcoinPrice = btcRounded;
+
+                item.MikroPrice = Math.Round((btcPrice * 1000), 2);
+                item.MilliPrice = Math.Round(btcPrice * 100000, 2);
+                item.SatoPrice = Math.Round(btcPrice * 100000000, 2);
+
+                
+
+
+
+
+
+
             }
 
             return newList;
         }
+
+        
+
+        
+
     }
 }

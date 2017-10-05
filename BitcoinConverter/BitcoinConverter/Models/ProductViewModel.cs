@@ -8,6 +8,6 @@ namespace BitcoinConverter.Models
     public class ProductViewModel
     {
         public List<Product> Products { get; set;}
-        public DateTime LastUpdated { get; set; }
+        public string LastUpdated { get; set; }
     }
 }

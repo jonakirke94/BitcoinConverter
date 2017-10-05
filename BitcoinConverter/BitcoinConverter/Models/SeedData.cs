@@ -25,20 +25,20 @@ namespace BitcoinConverter.Models
         private void MakeData()
         {
             P1.Name = "FERRARI 488";
-            P1.DKKPrice = 1450000.1378654m;
+            P1.DKKPrice = 1450000;
             P1.ImgUrl = "ferrari.jpg";
 
-            P2.Name = "FERRARI 488";
-            P2.DKKPrice = 1450000.01m;
-            P2.ImgUrl = "ferrari.jpg";
+            P2.Name = "1 Liter Mælk";
+            P2.DKKPrice = 10;
+            P2.ImgUrl = "milk.jpg";
 
-            P3.Name = "FERRARI 488";
-            P3.DKKPrice = 8.40m;
-            P3.ImgUrl = "ferrari.jpg";
+            P3.Name = "iPhone X 256GB";
+            P3.DKKPrice = 10249;
+            P3.ImgUrl = "iphoneX.jpg";
 
-            P4.Name = "FERRARI 488";
-            P4.DKKPrice = 1450000;
-            P4.ImgUrl = "ferrari.jpg";
+            P4.Name = "FCK Home Jersey 17/18";
+            P4.DKKPrice = 699;
+            P4.ImgUrl = "fck.jpg";
 
         }
         

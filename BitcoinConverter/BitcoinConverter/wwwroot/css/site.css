@@ -1,27 +1,70 @@
 ﻿body {
+    /*background-image: url('../images/bitcoin-logo-black.png');*/
+    background-color: #ddd;
+    padding-top: 40px;
 }
+
 
 h1 {
     color: black;
-    font-size: 70px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 72px;
+    margin: 0 0 24px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .img-thumbnail {
     border: 1px solid #808080;
 }
 
-h2 {
-    font-size: 15px;
-    padding: 10px;
-    padding-top: 20px;
-    margin-left: 70%;
-    font-weight: 500;
-    color: royalblue;
+
+#updated {
+    color: black;
+    float: right;
+    display: block;
+    padding: 5px;
+}
+
+.legend {
+    display: block;
+    float: left;
+    height: 10px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+    .legend p {
+        color: maroon;
+        padding-left: 30px;
+    }
+
+.fa-caret-right {
+    padding-left: 20px;
+}
+
+.fa-bars {
+    color: black;
+    margin-right: 10px;
+    margin-top: 5px;
+    float: right;
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+}
+
+.subunits {
+    display: none;
+    margin-left: -15px;
 }
 
 .gallery {
     padding-top: 20px;
+    opacity: 1;
+    background-color: #ddd;
 }
 
 #description {
@@ -29,6 +72,7 @@ h2 {
     border-left: 1px solid #808080;
     border-right: 1px solid #808080;
     border-radius: 4px;
+    background-color: white;
 }
     #description:hover {
         background-color: white;
@@ -50,6 +94,7 @@ h2 {
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
+    color: grey;
     text-align: center;
 }
 
@@ -57,8 +102,8 @@ h2 {
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
     color: maroon;
+    text-align: center;
 }
 
 #desc-divider {

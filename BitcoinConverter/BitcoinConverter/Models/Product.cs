@@ -10,6 +10,10 @@ namespace BitcoinConverter.Models
         public string Name { get; set; }
         public decimal DKKPrice { get; set; }
         public string ImgUrl { get; set; }
-        public string BitcoinPrice { get; set; }
+        public decimal BitcoinPrice { get; set; }
+        public decimal MikroPrice { get; set; }
+        public decimal MilliPrice { get; set; }
+        public decimal SatoPrice { get; set; }
+
     }
 }

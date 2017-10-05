@@ -1,1 +1,3 @@
-﻿// Write your JavaScript code.
+﻿$('.bar').click(function () {
+    $('.subunits').toggle(500);
+});

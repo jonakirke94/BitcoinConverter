@@ -5,24 +5,52 @@
 
 <h1>Hvad koster det i bitcoin?</h1>
 
-<h2>Last updated: @Model.LastUpdated</h2>
-
+<p id="updated">Seneste kurs: @Model.LastUpdated</p>
+<br />
 <hr />
 
 <div class="container-fluid">
     <div class="row">
-        @foreach(var item in Model.Products)
+        <div class="col-md-12">
+            <div class="legend"><p>1 BTC = 1 &#x243; (Bitcoin)<i class="fa fa-caret-right" aria-hidden="true"></i></p></div>
+            <div class="legend"><p>0.001 BTC = 1 mBTC (mikroBTC)<i class="fa fa-caret-right" aria-hidden="true"></i></p></div>
+            <div class="legend"><p>0.0000001 BTC = 1 μBTC (milliBTC)<i class="fa fa-caret-right" aria-hidden="true"></i></p></div>
+            <div class="legend"><p>0.00000001 BTC = 1 S (Satoshi)</p></div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="row">
+        @foreach (var item in Model.Products)
         {
             <div class="col-md-4 product">
                 <div class="gallery">
-                    <img src="~/images/@item.ImgUrl" class="img-responsive img-thumbnail"/>
+                    <img src="~/images/@item.ImgUrl" class="img-responsive img-thumbnail" />
                     <div id="description">
                         <div id="name">@item.Name</div>
-                        <hr id="desc-divider"/>
-                        string moneyValue = String.Format("{0:C}", moneyvalue);
-                        <div class="price-dkk">@item.DKKPrice kr.</div>
                         <hr id="desc-divider" />
-                        <div class="price-b">@item.BitcoinPrice </div>
+
+                        <div class="price-dkk">@string.Format("{0:N}", item.DKKPrice) kr.</div>
+                        <hr id="desc-divider" />
+                        <div class="price-b">
+                            @item.BitcoinPrice &#x243;<i class="fa fa-bars bar" aria-hidden="true"></i>
+
+                        </div>
+
+
+                        <div class="subunits ">
+                            <hr id="desc-divider" />
+                            <div class="price-b">@string.Format("{0:N}", item.MikroPrice) mBTC</div>
+                            <hr id="desc-divider" />
+                            <div class="price-b">@string.Format("{0:N}", item.MilliPrice) μBTC</div>
+                            <hr id="desc-divider" />
+                            <div class="price-b">@string.Format("{0:N}", item.SatoPrice) S</div>
+                        </div>
                     </div>
 
                 </div>
